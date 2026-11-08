@@ -14,7 +14,8 @@ HOST = '127.0.0.1'
 PORT = int(os.environ.get('PORT', '8767'))
 FILES = {'/': 'index.html', '/index.html': 'index.html', '/styles.css': 'styles.css',
          '/app.mjs': 'app.mjs', '/engine.mjs': 'engine.mjs', '/data/elements.json': 'data/elements.json',
-         '/families.html': 'families.html', '/family-app.mjs': 'family-app.mjs', '/family-engine.mjs': 'family-engine.mjs', '/metal.html': 'metal.html'}
+         '/families.html': 'families.html', '/family-app.mjs': 'family-app.mjs', '/family-engine.mjs': 'family-engine.mjs', '/metal.html': 'metal.html',
+         '/ions.html': 'ions.html', '/ions-app.mjs': 'ions-app.mjs', '/ions-engine.mjs': 'ions-engine.mjs'}
 MIME = {'.html': 'text/html', '.css': 'text/css', '.mjs': 'text/javascript', '.json': 'application/json'}
 
 class LocalServer(ThreadingHTTPServer):
