@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10141d"><meta name="description" content="Practice periodic-table families with neutral colors, three-pass batches, and saved mistake totals.">
+  <title>Element Families · Element Learn</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2310141d'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Arial' font-size='20' fill='%238de0e5'%3EEl%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css"><script type="module" src="./family-app.mjs"></script>
+</head>
+<body>
+  <header class="app-header">
+    <a class="brand" href="./" aria-label="Element Learn home"><span class="brand-mark" aria-hidden="true">El<small>118</small></span><span>Element<span class="brand-light">Learn</span></span></a>
+    <nav class="tabs" aria-label="Study games"><a class="tab" href="./">Names &amp; symbols</a><a class="tab active" href="./families.html" aria-current="page">Families</a><a class="tab" href="./metal.html">Metal or nonmetal</a></nav>
+    <span id="family-save-status" class="save-status" role="status">On this device</span>
+  </header>
+  <main>
+    <div id="family-storage-warning" class="notice" role="alert" hidden></div><div id="family-app-error" class="notice error" role="alert" hidden></div>
+    <div class="view-heading"><div><p class="eyebrow">A DIFFERENT WAY TO KNOW THE TABLE</p><h1>Element families</h1><p class="muted">Find the section. Choose the family. Keep track of what trips you up.</p></div><nav class="tabs family-view-tabs" aria-label="Family game views"><button id="family-play-tab" class="tab active" aria-pressed="true">Play</button><button id="family-study-tab" class="tab" aria-pressed="false">Study table</button></nav></div>
+    <div id="family-running-totals" class="family-totals panel" aria-label="Running family-game totals"></div>
+    <section id="family-play-view" aria-label="Element family quiz">
+      <div class="family-controls"><button id="family-start-all" class="button primary">Start a batch of 50</button><button id="family-start-missed" class="button secondary-button" disabled>Study missed</button><p id="family-mode-note" class="muted"></p></div>
+      <div class="family-play-layout"><div class="table-panel panel"><div class="table-scroll" tabindex="0" aria-label="Neutral periodic table, scroll horizontally on smaller screens"><div id="family-quiz-table" class="periodic-table family-table" role="group" aria-label="Neutral periodic table"></div></div><p class="family-table-note muted">The outlined element is your question. Family colors stay hidden during play.</p></div><div id="family-question-panel" class="family-question-panel question-panel panel"></div></div>
+      <p class="keyboard-hint">1–4 to choose an answer <span>·</span> Enter to continue</p>
+    </section>
+    <section id="family-study-view" aria-label="Study the table's families" hidden>
+      <div class="family-controls"><button id="family-toggle-colors" class="button secondary-button" aria-pressed="false">Show colors</button><p class="muted">Click any element to see its family. Your quiz waits here while you study.</p></div>
+      <div class="explore-layout"><div class="table-panel panel"><div id="family-study-legend" class="category-legend" aria-label="Element family colors" hidden></div><div class="table-scroll" tabindex="0" aria-label="Study periodic table, scroll horizontally on smaller screens"><div id="family-study-table" class="periodic-table family-table"></div></div></div><aside id="family-study-detail" class="detail-panel panel" aria-label="Element family and running totals"></aside></div>
+    </section>
+    <section class="collection-panel panel family-misses-panel" aria-labelledby="family-misses-title"><div class="collection-heading"><h2 id="family-misses-title">Your most missed elements</h2><span class="muted">Lifetime totals · this browser</span></div><p class="family-table-note muted">Study missed includes elements with at least one wrong answer. Elements with the most misses enter the first batch.</p><div id="family-missed-list" class="family-missed-list"></div></section>
+    <footer class="app-footer"><span>Family-game totals are separate from name and symbol progress.</span><button id="family-reset" class="text-button">Reset family stats</button></footer>
+  </main>
+  <dialog id="family-reset-dialog"><form method="dialog"><p class="eyebrow">FAMILY GAME ONLY</p><h2>Reset family-game progress?</h2><p>This clears family answers, mistake totals and batches. Your name and symbol learning stays saved.</p><div class="dialog-actions"><button value="cancel" class="button quiet">Keep totals</button><button id="family-confirm-reset" value="reset" class="button danger">Reset family game</button></div></form></dialog>
+</body>
+</html>

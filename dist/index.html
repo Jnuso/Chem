@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10141d">
+  <meta name="description" content="Learn all 118 element names and symbols with a color-coded periodic table and continuous adaptive practice.">
+  <title>Element Learn</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2310141d'/%3E%3Crect x='3' y='3' width='26' height='26' rx='5' fill='none' stroke='%2367c6ee' stroke-width='2'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Arial' font-size='20' font-weight='bold' fill='%2367c6ee'%3EEl%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <header class="app-header">
+    <a id="home-link" class="brand" href="#explore-view" aria-label="Element Learn home"><span class="brand-mark" aria-hidden="true">El<small>118</small></span><span>Element<span class="brand-light">Learn</span></span></a>
+    <nav class="tabs" aria-label="Study views"><button id="explore-tab" class="tab active" aria-current="page">Explore</button><button id="learn-tab" class="tab">Learn <span id="learn-tab-count" class="count">0 / 118</span></button><a id="families-tab" class="tab" href="./families.html">Families</a><a class="tab" href="./metal.html">Metal or nonmetal</a></nav>
+    <span id="save-status" class="save-status" role="status">On this device</span>
+  </header>
+  <main>
+    <div id="storage-warning" class="notice" role="alert" hidden></div>
+    <div id="app-error" class="notice error" role="alert" hidden></div>
+    <section id="explore-view" aria-labelledby="explore-title">
+      <div class="view-heading"><div><p class="eyebrow">YOUR ELEMENT FIELD GUIDE</p><h1 id="explore-title">Periodic table</h1><p class="muted">Explore an element. Choose a family. Learn a little at a time.</p></div><div class="heading-actions"><button id="make-new-set" class="button secondary-button" aria-pressed="false">Make new set</button><button id="practice-all" class="button primary">Practice all 118</button></div></div>
+      <div class="explore-layout">
+        <div class="table-panel panel">
+          <p id="set-selection-hint" class="set-selection-hint" role="status" aria-live="polite" hidden></p>
+          <div id="category-legend" class="category-legend" aria-label="Element families"></div>
+          <div class="table-scroll" tabindex="0" aria-label="Periodic table, scroll horizontally on smaller screens"><div id="periodic-table" class="periodic-table"></div></div>
+          <div class="table-footer"><div class="status-legend"><span><i class="status-mark unseen" aria-hidden="true"></i>Not studied</span><span><i class="status-mark learning" aria-hidden="true"></i>Learning</span><span><i class="status-mark learned" aria-hidden="true">✓</i>Learned</span><span><i class="status-mark needs-review" aria-hidden="true">!</i>Needs review</span></div><span class="secondary">Groups 1–18 · Periods 1–7</span></div>
+        </div>
+        <aside id="element-detail" class="detail-panel panel" aria-label="Selected element"></aside>
+      </div>
+      <div class="explore-bottom"><div id="selection-summary" class="selection-summary"></div><div class="selection-actions"><button id="clear-selection" class="button quiet">Clear selection</button><button id="practice-selected" class="button secondary-button" disabled>Practice selection</button></div></div>
+      <div class="collection-panel panel"><div class="collection-heading"><h2>Your elements</h2><span id="overall-summary" class="muted"></span></div><div class="collection-tabs" aria-label="Learning status"><button data-collection="learning" class="collection-tab active">To learn <span id="learning-count">118</span></button><button data-collection="learned" class="collection-tab">Learned <span id="learned-count">0</span></button><button data-collection="needs-review" class="collection-tab">Needs review <span id="review-count">0</span></button></div><div id="element-collection" class="element-collection"></div></div>
+    </section>
+    <section id="learn-view" aria-labelledby="learn-title" hidden>
+      <div class="view-heading"><div><p class="eyebrow">ONE CONTINUOUS SESSION</p><h1 id="learn-title">Make it stick.</h1><p id="learn-subtitle" class="muted">Ten elements at a time. Every answer builds on the last.</p></div><button id="change-study-set" class="button quiet">Change study set</button></div>
+      <div class="learn-layout"><aside class="study-sidebar"><div id="group-panel" class="panel"></div><div id="study-progress" class="panel"></div><div class="study-tip"><span class="eyebrow">HOW IT WORKS</span><p>Recognize it. Recall it. Reverse it.</p><p class="muted">Learn symbols → names, then names → symbols. After four learning answers, recall an older element to keep it learned.</p></div></aside><div><div id="question-panel" class="question-panel panel" aria-live="off"></div><p class="keyboard-hint">Enter to check or continue <span>·</span> 1–4 to choose an answer</p></div></div>
+    </section>
+    <footer class="app-footer"><span>118 elements. One lasting skill.</span><div><a href="https://pubchem.ncbi.nlm.nih.gov/periodic-table/" target="_blank" rel="noreferrer">Element data: PubChem</a><button id="reset-progress" class="text-button">Reset progress</button></div></footer>
+  </main>
+  <dialog id="reset-dialog"><form method="dialog"><p class="eyebrow">START FRESH</p><h2>Reset name and symbol progress?</h2><p>This clears learned names/symbols, review schedules, and your current learning question on this browser. Family-game totals stay saved.</p><div class="dialog-actions"><button value="cancel" class="button quiet">Keep progress</button><button id="confirm-reset" value="reset" class="button danger">Reset learning</button></div></form></dialog>
+</body>
+</html>

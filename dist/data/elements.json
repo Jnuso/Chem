@@ -1,0 +1,1547 @@
+{
+  "version": 1,
+  "source": {
+    "name": "PubChem Periodic Table",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+    "retrieved": "2026-09-30"
+  },
+  "categories": [
+    {
+      "id": "alkali-metal",
+      "label": "Alkali metals",
+      "color": "#ff7990"
+    },
+    {
+      "id": "alkaline-earth-metal",
+      "label": "Alkaline earth metals",
+      "color": "#ffbc66"
+    },
+    {
+      "id": "transition-metal",
+      "label": "Transition metals",
+      "color": "#f4da72"
+    },
+    {
+      "id": "post-transition-metal",
+      "label": "Post-transition metals",
+      "color": "#65d4b2"
+    },
+    {
+      "id": "metalloid",
+      "label": "Metalloids",
+      "color": "#a4db70"
+    },
+    {
+      "id": "nonmetal",
+      "label": "Other nonmetals",
+      "color": "#67c6ee"
+    },
+    {
+      "id": "halogen",
+      "label": "Halogens",
+      "color": "#a5a2ff"
+    },
+    {
+      "id": "noble-gas",
+      "label": "Noble gases",
+      "color": "#d6a2fa"
+    },
+    {
+      "id": "lanthanide",
+      "label": "Lanthanides",
+      "color": "#efa0c2"
+    },
+    {
+      "id": "actinide",
+      "label": "Actinides",
+      "color": "#8cb3ff"
+    }
+  ],
+  "elements": [
+    {
+      "number": 1,
+      "symbol": "H",
+      "name": "Hydrogen",
+      "category": "nonmetal",
+      "period": 1,
+      "group": 1,
+      "row": 2,
+      "column": 1,
+      "aliases": []
+    },
+    {
+      "number": 2,
+      "symbol": "He",
+      "name": "Helium",
+      "category": "noble-gas",
+      "period": 1,
+      "group": 18,
+      "row": 2,
+      "column": 18,
+      "aliases": []
+    },
+    {
+      "number": 3,
+      "symbol": "Li",
+      "name": "Lithium",
+      "category": "alkali-metal",
+      "period": 2,
+      "group": 1,
+      "row": 3,
+      "column": 1,
+      "aliases": []
+    },
+    {
+      "number": 4,
+      "symbol": "Be",
+      "name": "Beryllium",
+      "category": "alkaline-earth-metal",
+      "period": 2,
+      "group": 2,
+      "row": 3,
+      "column": 2,
+      "aliases": []
+    },
+    {
+      "number": 5,
+      "symbol": "B",
+      "name": "Boron",
+      "category": "metalloid",
+      "period": 2,
+      "group": 13,
+      "row": 3,
+      "column": 13,
+      "aliases": []
+    },
+    {
+      "number": 6,
+      "symbol": "C",
+      "name": "Carbon",
+      "category": "nonmetal",
+      "period": 2,
+      "group": 14,
+      "row": 3,
+      "column": 14,
+      "aliases": []
+    },
+    {
+      "number": 7,
+      "symbol": "N",
+      "name": "Nitrogen",
+      "category": "nonmetal",
+      "period": 2,
+      "group": 15,
+      "row": 3,
+      "column": 15,
+      "aliases": []
+    },
+    {
+      "number": 8,
+      "symbol": "O",
+      "name": "Oxygen",
+      "category": "nonmetal",
+      "period": 2,
+      "group": 16,
+      "row": 3,
+      "column": 16,
+      "aliases": []
+    },
+    {
+      "number": 9,
+      "symbol": "F",
+      "name": "Fluorine",
+      "category": "halogen",
+      "period": 2,
+      "group": 17,
+      "row": 3,
+      "column": 17,
+      "aliases": []
+    },
+    {
+      "number": 10,
+      "symbol": "Ne",
+      "name": "Neon",
+      "category": "noble-gas",
+      "period": 2,
+      "group": 18,
+      "row": 3,
+      "column": 18,
+      "aliases": []
+    },
+    {
+      "number": 11,
+      "symbol": "Na",
+      "name": "Sodium",
+      "category": "alkali-metal",
+      "period": 3,
+      "group": 1,
+      "row": 4,
+      "column": 1,
+      "aliases": []
+    },
+    {
+      "number": 12,
+      "symbol": "Mg",
+      "name": "Magnesium",
+      "category": "alkaline-earth-metal",
+      "period": 3,
+      "group": 2,
+      "row": 4,
+      "column": 2,
+      "aliases": []
+    },
+    {
+      "number": 13,
+      "symbol": "Al",
+      "name": "Aluminum",
+      "category": "post-transition-metal",
+      "period": 3,
+      "group": 13,
+      "row": 4,
+      "column": 13,
+      "aliases": [
+        "Aluminium"
+      ]
+    },
+    {
+      "number": 14,
+      "symbol": "Si",
+      "name": "Silicon",
+      "category": "metalloid",
+      "period": 3,
+      "group": 14,
+      "row": 4,
+      "column": 14,
+      "aliases": []
+    },
+    {
+      "number": 15,
+      "symbol": "P",
+      "name": "Phosphorus",
+      "category": "nonmetal",
+      "period": 3,
+      "group": 15,
+      "row": 4,
+      "column": 15,
+      "aliases": []
+    },
+    {
+      "number": 16,
+      "symbol": "S",
+      "name": "Sulfur",
+      "category": "nonmetal",
+      "period": 3,
+      "group": 16,
+      "row": 4,
+      "column": 16,
+      "aliases": [
+        "Sulphur"
+      ]
+    },
+    {
+      "number": 17,
+      "symbol": "Cl",
+      "name": "Chlorine",
+      "category": "halogen",
+      "period": 3,
+      "group": 17,
+      "row": 4,
+      "column": 17,
+      "aliases": []
+    },
+    {
+      "number": 18,
+      "symbol": "Ar",
+      "name": "Argon",
+      "category": "noble-gas",
+      "period": 3,
+      "group": 18,
+      "row": 4,
+      "column": 18,
+      "aliases": []
+    },
+    {
+      "number": 19,
+      "symbol": "K",
+      "name": "Potassium",
+      "category": "alkali-metal",
+      "period": 4,
+      "group": 1,
+      "row": 5,
+      "column": 1,
+      "aliases": []
+    },
+    {
+      "number": 20,
+      "symbol": "Ca",
+      "name": "Calcium",
+      "category": "alkaline-earth-metal",
+      "period": 4,
+      "group": 2,
+      "row": 5,
+      "column": 2,
+      "aliases": []
+    },
+    {
+      "number": 21,
+      "symbol": "Sc",
+      "name": "Scandium",
+      "category": "transition-metal",
+      "period": 4,
+      "group": 3,
+      "row": 5,
+      "column": 3,
+      "aliases": []
+    },
+    {
+      "number": 22,
+      "symbol": "Ti",
+      "name": "Titanium",
+      "category": "transition-metal",
+      "period": 4,
+      "group": 4,
+      "row": 5,
+      "column": 4,
+      "aliases": []
+    },
+    {
+      "number": 23,
+      "symbol": "V",
+      "name": "Vanadium",
+      "category": "transition-metal",
+      "period": 4,
+      "group": 5,
+      "row": 5,
+      "column": 5,
+      "aliases": []
+    },
+    {
+      "number": 24,
+      "symbol": "Cr",
+      "name": "Chromium",
+      "category": "transition-metal",
+      "period": 4,
+      "group": 6,
+      "row": 5,
+      "column": 6,
+      "aliases": []
+    },
+    {
+      "number": 25,
+      "symbol": "Mn",
+      "name": "Manganese",
+      "category": "transition-metal",
+      "period": 4,
+      "group": 7,
+      "row": 5,
+      "column": 7,
+      "aliases": []
+    },
+    {
+      "number": 26,
+      "symbol": "Fe",
+      "name": "Iron",
+      "category": "transition-metal",
+      "period": 4,
+      "group": 8,
+      "row": 5,
+      "column": 8,
+      "aliases": []
+    },
+    {
+      "number": 27,
+      "symbol": "Co",
+      "name": "Cobalt",
+      "category": "transition-metal",
+      "period": 4,
+      "group": 9,
+      "row": 5,
+      "column": 9,
+      "aliases": []
+    },
+    {
+      "number": 28,
+      "symbol": "Ni",
+      "name": "Nickel",
+      "category": "transition-metal",
+      "period": 4,
+      "group": 10,
+      "row": 5,
+      "column": 10,
+      "aliases": []
+    },
+    {
+      "number": 29,
+      "symbol": "Cu",
+      "name": "Copper",
+      "category": "transition-metal",
+      "period": 4,
+      "group": 11,
+      "row": 5,
+      "column": 11,
+      "aliases": []
+    },
+    {
+      "number": 30,
+      "symbol": "Zn",
+      "name": "Zinc",
+      "category": "transition-metal",
+      "period": 4,
+      "group": 12,
+      "row": 5,
+      "column": 12,
+      "aliases": []
+    },
+    {
+      "number": 31,
+      "symbol": "Ga",
+      "name": "Gallium",
+      "category": "post-transition-metal",
+      "period": 4,
+      "group": 13,
+      "row": 5,
+      "column": 13,
+      "aliases": []
+    },
+    {
+      "number": 32,
+      "symbol": "Ge",
+      "name": "Germanium",
+      "category": "metalloid",
+      "period": 4,
+      "group": 14,
+      "row": 5,
+      "column": 14,
+      "aliases": []
+    },
+    {
+      "number": 33,
+      "symbol": "As",
+      "name": "Arsenic",
+      "category": "metalloid",
+      "period": 4,
+      "group": 15,
+      "row": 5,
+      "column": 15,
+      "aliases": []
+    },
+    {
+      "number": 34,
+      "symbol": "Se",
+      "name": "Selenium",
+      "category": "nonmetal",
+      "period": 4,
+      "group": 16,
+      "row": 5,
+      "column": 16,
+      "aliases": []
+    },
+    {
+      "number": 35,
+      "symbol": "Br",
+      "name": "Bromine",
+      "category": "halogen",
+      "period": 4,
+      "group": 17,
+      "row": 5,
+      "column": 17,
+      "aliases": []
+    },
+    {
+      "number": 36,
+      "symbol": "Kr",
+      "name": "Krypton",
+      "category": "noble-gas",
+      "period": 4,
+      "group": 18,
+      "row": 5,
+      "column": 18,
+      "aliases": []
+    },
+    {
+      "number": 37,
+      "symbol": "Rb",
+      "name": "Rubidium",
+      "category": "alkali-metal",
+      "period": 5,
+      "group": 1,
+      "row": 6,
+      "column": 1,
+      "aliases": []
+    },
+    {
+      "number": 38,
+      "symbol": "Sr",
+      "name": "Strontium",
+      "category": "alkaline-earth-metal",
+      "period": 5,
+      "group": 2,
+      "row": 6,
+      "column": 2,
+      "aliases": []
+    },
+    {
+      "number": 39,
+      "symbol": "Y",
+      "name": "Yttrium",
+      "category": "transition-metal",
+      "period": 5,
+      "group": 3,
+      "row": 6,
+      "column": 3,
+      "aliases": []
+    },
+    {
+      "number": 40,
+      "symbol": "Zr",
+      "name": "Zirconium",
+      "category": "transition-metal",
+      "period": 5,
+      "group": 4,
+      "row": 6,
+      "column": 4,
+      "aliases": []
+    },
+    {
+      "number": 41,
+      "symbol": "Nb",
+      "name": "Niobium",
+      "category": "transition-metal",
+      "period": 5,
+      "group": 5,
+      "row": 6,
+      "column": 5,
+      "aliases": []
+    },
+    {
+      "number": 42,
+      "symbol": "Mo",
+      "name": "Molybdenum",
+      "category": "transition-metal",
+      "period": 5,
+      "group": 6,
+      "row": 6,
+      "column": 6,
+      "aliases": []
+    },
+    {
+      "number": 43,
+      "symbol": "Tc",
+      "name": "Technetium",
+      "category": "transition-metal",
+      "period": 5,
+      "group": 7,
+      "row": 6,
+      "column": 7,
+      "aliases": []
+    },
+    {
+      "number": 44,
+      "symbol": "Ru",
+      "name": "Ruthenium",
+      "category": "transition-metal",
+      "period": 5,
+      "group": 8,
+      "row": 6,
+      "column": 8,
+      "aliases": []
+    },
+    {
+      "number": 45,
+      "symbol": "Rh",
+      "name": "Rhodium",
+      "category": "transition-metal",
+      "period": 5,
+      "group": 9,
+      "row": 6,
+      "column": 9,
+      "aliases": []
+    },
+    {
+      "number": 46,
+      "symbol": "Pd",
+      "name": "Palladium",
+      "category": "transition-metal",
+      "period": 5,
+      "group": 10,
+      "row": 6,
+      "column": 10,
+      "aliases": []
+    },
+    {
+      "number": 47,
+      "symbol": "Ag",
+      "name": "Silver",
+      "category": "transition-metal",
+      "period": 5,
+      "group": 11,
+      "row": 6,
+      "column": 11,
+      "aliases": []
+    },
+    {
+      "number": 48,
+      "symbol": "Cd",
+      "name": "Cadmium",
+      "category": "transition-metal",
+      "period": 5,
+      "group": 12,
+      "row": 6,
+      "column": 12,
+      "aliases": []
+    },
+    {
+      "number": 49,
+      "symbol": "In",
+      "name": "Indium",
+      "category": "post-transition-metal",
+      "period": 5,
+      "group": 13,
+      "row": 6,
+      "column": 13,
+      "aliases": []
+    },
+    {
+      "number": 50,
+      "symbol": "Sn",
+      "name": "Tin",
+      "category": "post-transition-metal",
+      "period": 5,
+      "group": 14,
+      "row": 6,
+      "column": 14,
+      "aliases": []
+    },
+    {
+      "number": 51,
+      "symbol": "Sb",
+      "name": "Antimony",
+      "category": "metalloid",
+      "period": 5,
+      "group": 15,
+      "row": 6,
+      "column": 15,
+      "aliases": []
+    },
+    {
+      "number": 52,
+      "symbol": "Te",
+      "name": "Tellurium",
+      "category": "metalloid",
+      "period": 5,
+      "group": 16,
+      "row": 6,
+      "column": 16,
+      "aliases": []
+    },
+    {
+      "number": 53,
+      "symbol": "I",
+      "name": "Iodine",
+      "category": "halogen",
+      "period": 5,
+      "group": 17,
+      "row": 6,
+      "column": 17,
+      "aliases": []
+    },
+    {
+      "number": 54,
+      "symbol": "Xe",
+      "name": "Xenon",
+      "category": "noble-gas",
+      "period": 5,
+      "group": 18,
+      "row": 6,
+      "column": 18,
+      "aliases": []
+    },
+    {
+      "number": 55,
+      "symbol": "Cs",
+      "name": "Cesium",
+      "category": "alkali-metal",
+      "period": 6,
+      "group": 1,
+      "row": 7,
+      "column": 1,
+      "aliases": [
+        "Caesium"
+      ]
+    },
+    {
+      "number": 56,
+      "symbol": "Ba",
+      "name": "Barium",
+      "category": "alkaline-earth-metal",
+      "period": 6,
+      "group": 2,
+      "row": 7,
+      "column": 2,
+      "aliases": []
+    },
+    {
+      "number": 57,
+      "symbol": "La",
+      "name": "Lanthanum",
+      "category": "lanthanide",
+      "period": 6,
+      "group": null,
+      "row": 10,
+      "column": 4,
+      "aliases": []
+    },
+    {
+      "number": 58,
+      "symbol": "Ce",
+      "name": "Cerium",
+      "category": "lanthanide",
+      "period": 6,
+      "group": null,
+      "row": 10,
+      "column": 5,
+      "aliases": []
+    },
+    {
+      "number": 59,
+      "symbol": "Pr",
+      "name": "Praseodymium",
+      "category": "lanthanide",
+      "period": 6,
+      "group": null,
+      "row": 10,
+      "column": 6,
+      "aliases": []
+    },
+    {
+      "number": 60,
+      "symbol": "Nd",
+      "name": "Neodymium",
+      "category": "lanthanide",
+      "period": 6,
+      "group": null,
+      "row": 10,
+      "column": 7,
+      "aliases": []
+    },
+    {
+      "number": 61,
+      "symbol": "Pm",
+      "name": "Promethium",
+      "category": "lanthanide",
+      "period": 6,
+      "group": null,
+      "row": 10,
+      "column": 8,
+      "aliases": []
+    },
+    {
+      "number": 62,
+      "symbol": "Sm",
+      "name": "Samarium",
+      "category": "lanthanide",
+      "period": 6,
+      "group": null,
+      "row": 10,
+      "column": 9,
+      "aliases": []
+    },
+    {
+      "number": 63,
+      "symbol": "Eu",
+      "name": "Europium",
+      "category": "lanthanide",
+      "period": 6,
+      "group": null,
+      "row": 10,
+      "column": 10,
+      "aliases": []
+    },
+    {
+      "number": 64,
+      "symbol": "Gd",
+      "name": "Gadolinium",
+      "category": "lanthanide",
+      "period": 6,
+      "group": null,
+      "row": 10,
+      "column": 11,
+      "aliases": []
+    },
+    {
+      "number": 65,
+      "symbol": "Tb",
+      "name": "Terbium",
+      "category": "lanthanide",
+      "period": 6,
+      "group": null,
+      "row": 10,
+      "column": 12,
+      "aliases": []
+    },
+    {
+      "number": 66,
+      "symbol": "Dy",
+      "name": "Dysprosium",
+      "category": "lanthanide",
+      "period": 6,
+      "group": null,
+      "row": 10,
+      "column": 13,
+      "aliases": []
+    },
+    {
+      "number": 67,
+      "symbol": "Ho",
+      "name": "Holmium",
+      "category": "lanthanide",
+      "period": 6,
+      "group": null,
+      "row": 10,
+      "column": 14,
+      "aliases": []
+    },
+    {
+      "number": 68,
+      "symbol": "Er",
+      "name": "Erbium",
+      "category": "lanthanide",
+      "period": 6,
+      "group": null,
+      "row": 10,
+      "column": 15,
+      "aliases": []
+    },
+    {
+      "number": 69,
+      "symbol": "Tm",
+      "name": "Thulium",
+      "category": "lanthanide",
+      "period": 6,
+      "group": null,
+      "row": 10,
+      "column": 16,
+      "aliases": []
+    },
+    {
+      "number": 70,
+      "symbol": "Yb",
+      "name": "Ytterbium",
+      "category": "lanthanide",
+      "period": 6,
+      "group": null,
+      "row": 10,
+      "column": 17,
+      "aliases": []
+    },
+    {
+      "number": 71,
+      "symbol": "Lu",
+      "name": "Lutetium",
+      "category": "lanthanide",
+      "period": 6,
+      "group": null,
+      "row": 10,
+      "column": 18,
+      "aliases": []
+    },
+    {
+      "number": 72,
+      "symbol": "Hf",
+      "name": "Hafnium",
+      "category": "transition-metal",
+      "period": 6,
+      "group": 4,
+      "row": 7,
+      "column": 4,
+      "aliases": []
+    },
+    {
+      "number": 73,
+      "symbol": "Ta",
+      "name": "Tantalum",
+      "category": "transition-metal",
+      "period": 6,
+      "group": 5,
+      "row": 7,
+      "column": 5,
+      "aliases": []
+    },
+    {
+      "number": 74,
+      "symbol": "W",
+      "name": "Tungsten",
+      "category": "transition-metal",
+      "period": 6,
+      "group": 6,
+      "row": 7,
+      "column": 6,
+      "aliases": []
+    },
+    {
+      "number": 75,
+      "symbol": "Re",
+      "name": "Rhenium",
+      "category": "transition-metal",
+      "period": 6,
+      "group": 7,
+      "row": 7,
+      "column": 7,
+      "aliases": []
+    },
+    {
+      "number": 76,
+      "symbol": "Os",
+      "name": "Osmium",
+      "category": "transition-metal",
+      "period": 6,
+      "group": 8,
+      "row": 7,
+      "column": 8,
+      "aliases": []
+    },
+    {
+      "number": 77,
+      "symbol": "Ir",
+      "name": "Iridium",
+      "category": "transition-metal",
+      "period": 6,
+      "group": 9,
+      "row": 7,
+      "column": 9,
+      "aliases": []
+    },
+    {
+      "number": 78,
+      "symbol": "Pt",
+      "name": "Platinum",
+      "category": "transition-metal",
+      "period": 6,
+      "group": 10,
+      "row": 7,
+      "column": 10,
+      "aliases": []
+    },
+    {
+      "number": 79,
+      "symbol": "Au",
+      "name": "Gold",
+      "category": "transition-metal",
+      "period": 6,
+      "group": 11,
+      "row": 7,
+      "column": 11,
+      "aliases": []
+    },
+    {
+      "number": 80,
+      "symbol": "Hg",
+      "name": "Mercury",
+      "category": "transition-metal",
+      "period": 6,
+      "group": 12,
+      "row": 7,
+      "column": 12,
+      "aliases": []
+    },
+    {
+      "number": 81,
+      "symbol": "Tl",
+      "name": "Thallium",
+      "category": "post-transition-metal",
+      "period": 6,
+      "group": 13,
+      "row": 7,
+      "column": 13,
+      "aliases": []
+    },
+    {
+      "number": 82,
+      "symbol": "Pb",
+      "name": "Lead",
+      "category": "post-transition-metal",
+      "period": 6,
+      "group": 14,
+      "row": 7,
+      "column": 14,
+      "aliases": []
+    },
+    {
+      "number": 83,
+      "symbol": "Bi",
+      "name": "Bismuth",
+      "category": "post-transition-metal",
+      "period": 6,
+      "group": 15,
+      "row": 7,
+      "column": 15,
+      "aliases": []
+    },
+    {
+      "number": 84,
+      "symbol": "Po",
+      "name": "Polonium",
+      "category": "metalloid",
+      "period": 6,
+      "group": 16,
+      "row": 7,
+      "column": 16,
+      "aliases": []
+    },
+    {
+      "number": 85,
+      "symbol": "At",
+      "name": "Astatine",
+      "category": "halogen",
+      "period": 6,
+      "group": 17,
+      "row": 7,
+      "column": 17,
+      "aliases": []
+    },
+    {
+      "number": 86,
+      "symbol": "Rn",
+      "name": "Radon",
+      "category": "noble-gas",
+      "period": 6,
+      "group": 18,
+      "row": 7,
+      "column": 18,
+      "aliases": []
+    },
+    {
+      "number": 87,
+      "symbol": "Fr",
+      "name": "Francium",
+      "category": "alkali-metal",
+      "period": 7,
+      "group": 1,
+      "row": 8,
+      "column": 1,
+      "aliases": []
+    },
+    {
+      "number": 88,
+      "symbol": "Ra",
+      "name": "Radium",
+      "category": "alkaline-earth-metal",
+      "period": 7,
+      "group": 2,
+      "row": 8,
+      "column": 2,
+      "aliases": []
+    },
+    {
+      "number": 89,
+      "symbol": "Ac",
+      "name": "Actinium",
+      "category": "actinide",
+      "period": 7,
+      "group": null,
+      "row": 11,
+      "column": 4,
+      "aliases": []
+    },
+    {
+      "number": 90,
+      "symbol": "Th",
+      "name": "Thorium",
+      "category": "actinide",
+      "period": 7,
+      "group": null,
+      "row": 11,
+      "column": 5,
+      "aliases": []
+    },
+    {
+      "number": 91,
+      "symbol": "Pa",
+      "name": "Protactinium",
+      "category": "actinide",
+      "period": 7,
+      "group": null,
+      "row": 11,
+      "column": 6,
+      "aliases": []
+    },
+    {
+      "number": 92,
+      "symbol": "U",
+      "name": "Uranium",
+      "category": "actinide",
+      "period": 7,
+      "group": null,
+      "row": 11,
+      "column": 7,
+      "aliases": []
+    },
+    {
+      "number": 93,
+      "symbol": "Np",
+      "name": "Neptunium",
+      "category": "actinide",
+      "period": 7,
+      "group": null,
+      "row": 11,
+      "column": 8,
+      "aliases": []
+    },
+    {
+      "number": 94,
+      "symbol": "Pu",
+      "name": "Plutonium",
+      "category": "actinide",
+      "period": 7,
+      "group": null,
+      "row": 11,
+      "column": 9,
+      "aliases": []
+    },
+    {
+      "number": 95,
+      "symbol": "Am",
+      "name": "Americium",
+      "category": "actinide",
+      "period": 7,
+      "group": null,
+      "row": 11,
+      "column": 10,
+      "aliases": []
+    },
+    {
+      "number": 96,
+      "symbol": "Cm",
+      "name": "Curium",
+      "category": "actinide",
+      "period": 7,
+      "group": null,
+      "row": 11,
+      "column": 11,
+      "aliases": []
+    },
+    {
+      "number": 97,
+      "symbol": "Bk",
+      "name": "Berkelium",
+      "category": "actinide",
+      "period": 7,
+      "group": null,
+      "row": 11,
+      "column": 12,
+      "aliases": []
+    },
+    {
+      "number": 98,
+      "symbol": "Cf",
+      "name": "Californium",
+      "category": "actinide",
+      "period": 7,
+      "group": null,
+      "row": 11,
+      "column": 13,
+      "aliases": []
+    },
+    {
+      "number": 99,
+      "symbol": "Es",
+      "name": "Einsteinium",
+      "category": "actinide",
+      "period": 7,
+      "group": null,
+      "row": 11,
+      "column": 14,
+      "aliases": []
+    },
+    {
+      "number": 100,
+      "symbol": "Fm",
+      "name": "Fermium",
+      "category": "actinide",
+      "period": 7,
+      "group": null,
+      "row": 11,
+      "column": 15,
+      "aliases": []
+    },
+    {
+      "number": 101,
+      "symbol": "Md",
+      "name": "Mendelevium",
+      "category": "actinide",
+      "period": 7,
+      "group": null,
+      "row": 11,
+      "column": 16,
+      "aliases": []
+    },
+    {
+      "number": 102,
+      "symbol": "No",
+      "name": "Nobelium",
+      "category": "actinide",
+      "period": 7,
+      "group": null,
+      "row": 11,
+      "column": 17,
+      "aliases": []
+    },
+    {
+      "number": 103,
+      "symbol": "Lr",
+      "name": "Lawrencium",
+      "category": "actinide",
+      "period": 7,
+      "group": null,
+      "row": 11,
+      "column": 18,
+      "aliases": []
+    },
+    {
+      "number": 104,
+      "symbol": "Rf",
+      "name": "Rutherfordium",
+      "category": "transition-metal",
+      "period": 7,
+      "group": 4,
+      "row": 8,
+      "column": 4,
+      "aliases": []
+    },
+    {
+      "number": 105,
+      "symbol": "Db",
+      "name": "Dubnium",
+      "category": "transition-metal",
+      "period": 7,
+      "group": 5,
+      "row": 8,
+      "column": 5,
+      "aliases": []
+    },
+    {
+      "number": 106,
+      "symbol": "Sg",
+      "name": "Seaborgium",
+      "category": "transition-metal",
+      "period": 7,
+      "group": 6,
+      "row": 8,
+      "column": 6,
+      "aliases": []
+    },
+    {
+      "number": 107,
+      "symbol": "Bh",
+      "name": "Bohrium",
+      "category": "transition-metal",
+      "period": 7,
+      "group": 7,
+      "row": 8,
+      "column": 7,
+      "aliases": []
+    },
+    {
+      "number": 108,
+      "symbol": "Hs",
+      "name": "Hassium",
+      "category": "transition-metal",
+      "period": 7,
+      "group": 8,
+      "row": 8,
+      "column": 8,
+      "aliases": []
+    },
+    {
+      "number": 109,
+      "symbol": "Mt",
+      "name": "Meitnerium",
+      "category": "transition-metal",
+      "period": 7,
+      "group": 9,
+      "row": 8,
+      "column": 9,
+      "aliases": []
+    },
+    {
+      "number": 110,
+      "symbol": "Ds",
+      "name": "Darmstadtium",
+      "category": "transition-metal",
+      "period": 7,
+      "group": 10,
+      "row": 8,
+      "column": 10,
+      "aliases": []
+    },
+    {
+      "number": 111,
+      "symbol": "Rg",
+      "name": "Roentgenium",
+      "category": "transition-metal",
+      "period": 7,
+      "group": 11,
+      "row": 8,
+      "column": 11,
+      "aliases": []
+    },
+    {
+      "number": 112,
+      "symbol": "Cn",
+      "name": "Copernicium",
+      "category": "transition-metal",
+      "period": 7,
+      "group": 12,
+      "row": 8,
+      "column": 12,
+      "aliases": []
+    },
+    {
+      "number": 113,
+      "symbol": "Nh",
+      "name": "Nihonium",
+      "category": "post-transition-metal",
+      "period": 7,
+      "group": 13,
+      "row": 8,
+      "column": 13,
+      "aliases": []
+    },
+    {
+      "number": 114,
+      "symbol": "Fl",
+      "name": "Flerovium",
+      "category": "post-transition-metal",
+      "period": 7,
+      "group": 14,
+      "row": 8,
+      "column": 14,
+      "aliases": []
+    },
+    {
+      "number": 115,
+      "symbol": "Mc",
+      "name": "Moscovium",
+      "category": "post-transition-metal",
+      "period": 7,
+      "group": 15,
+      "row": 8,
+      "column": 15,
+      "aliases": []
+    },
+    {
+      "number": 116,
+      "symbol": "Lv",
+      "name": "Livermorium",
+      "category": "post-transition-metal",
+      "period": 7,
+      "group": 16,
+      "row": 8,
+      "column": 16,
+      "aliases": []
+    },
+    {
+      "number": 117,
+      "symbol": "Ts",
+      "name": "Tennessine",
+      "category": "halogen",
+      "period": 7,
+      "group": 17,
+      "row": 8,
+      "column": 17,
+      "aliases": []
+    },
+    {
+      "number": 118,
+      "symbol": "Og",
+      "name": "Oganesson",
+      "category": "noble-gas",
+      "period": 7,
+      "group": 18,
+      "row": 8,
+      "column": 18,
+      "aliases": []
+    }
+  ],
+  "groups": [
+    {
+      "id": "group-01",
+      "numbers": [
+        47,
+        18,
+        33,
+        85,
+        79,
+        1,
+        2,
+        67,
+        72,
+        108
+      ]
+    },
+    {
+      "id": "group-02",
+      "numbers": [
+        3,
+        116,
+        71,
+        57,
+        103,
+        4,
+        97,
+        56,
+        107,
+        35
+      ]
+    },
+    {
+      "id": "group-03",
+      "numbers": [
+        5,
+        83,
+        26,
+        6,
+        10,
+        7,
+        28,
+        41,
+        113,
+        93
+      ]
+    },
+    {
+      "id": "group-04",
+      "numbers": [
+        8,
+        76,
+        118,
+        54,
+        29,
+        9,
+        114,
+        87,
+        100,
+        17
+      ]
+    },
+    {
+      "id": "group-05",
+      "numbers": [
+        11,
+        21,
+        16,
+        34,
+        38,
+        12,
+        25,
+        109,
+        115,
+        101
+      ]
+    },
+    {
+      "id": "group-06",
+      "numbers": [
+        13,
+        89,
+        95,
+        51,
+        78,
+        14,
+        62,
+        106,
+        50,
+        20
+      ]
+    },
+    {
+      "id": "group-07",
+      "numbers": [
+        15,
+        61,
+        84,
+        46,
+        94,
+        19,
+        91,
+        59,
+        36,
+        22
+      ]
+    },
+    {
+      "id": "group-08",
+      "numbers": [
+        23,
+        49,
+        88,
+        31,
+        37,
+        24,
+        48,
+        58,
+        96,
+        55
+      ]
+    },
+    {
+      "id": "group-09",
+      "numbers": [
+        27,
+        112,
+        98,
+        53,
+        68,
+        30,
+        40,
+        82,
+        86,
+        39
+      ]
+    },
+    {
+      "id": "group-10",
+      "numbers": [
+        32,
+        64,
+        92,
+        65,
+        75,
+        42,
+        80,
+        102,
+        111,
+        44
+      ]
+    },
+    {
+      "id": "group-11",
+      "numbers": [
+        43,
+        52,
+        117,
+        69,
+        81,
+        45,
+        104,
+        90,
+        77,
+        60
+      ]
+    },
+    {
+      "id": "group-12",
+      "numbers": [
+        63,
+        99,
+        105,
+        66,
+        70,
+        73,
+        74,
+        110
+      ]
+    }
+  ],
+  "studyGroupSize": 10
+}
