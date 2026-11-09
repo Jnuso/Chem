@@ -25,6 +25,8 @@ test('dataset: all 118 names, symbols, categories and table cells are unique and
     assert.match(e.symbol, /^[A-Z][a-z]?$/);
     assert.ok(e.name && e.column >= 1 && e.column <= 18);
     assert.ok(e.row >= 2 && e.row <= 11 && e.row !== 9);
+    assert.ok(e.atomicMass && Number(e.atomicMass)>0);
+    assert.equal(typeof e.isotopeMass,'boolean');
   }
   const rows = [[1,2], [3,10], [11,18], [19,36], [37,54], [55,86], [87,118]];
   rows.forEach(([start,end],i) => {

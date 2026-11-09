@@ -47,7 +47,7 @@ async function boot({saved=null,failRead=false,failWrite=false,webmcp=true,failR
   const storage={values:new Map(),failRead,failWrite,getItem(k){if(this.failRead)throw Error('Storage denied');return this.values.get(k)??null;},setItem(k,v){if(this.failWrite)throw Error('Storage full');this.values.set(k,v);}};
   if(saved!==null)storage.values.set(STORAGE_KEY,typeof saved==='string'?saved:JSON.stringify(saved));
   const window={addEventListener(){},scrollTo(){}};
-  const fetch=async url=>{assert.equal(url,'./data/elements.json');return {ok:true,json:async()=>data};};
+  const fetch=async url=>{assert.equal(url,'./data/elements.json?details=1');return {ok:true,json:async()=>data};};
   const AsyncFunction=Object.getPrototypeOf(async function(){}).constructor;
   await new AsyncFunction('document','window','localStorage','fetch','LearningEngine','STORAGE_KEY','DIRECTIONS','AbortController','console',source)(document,window,storage,fetch,LearningEngine,STORAGE_KEY,DIRECTIONS,AbortController,{warn(){}});
   const el=id=>document.getElementById(id);
@@ -69,6 +69,20 @@ test('app boots offline with all 118 cells, ten families, selected-element detai
   assert.equal(a.state().selected.length,118);assert.equal(a.el('learning-count').textContent,118);
   assert.equal((a.el('element-collection').innerHTML.match(/class="collection-element"/g)||[]).length,118);
   assert.match(a.el('selection-summary').innerHTML,/all 118/);
+});
+test('element details show atomic molar mass, neutral electrons and accurately qualified oxidation states',async()=>{
+  const a=await boot();a.click('',{element:'11'});
+  assert.match(a.el('element-detail').innerHTML,/22\.9897693 g\/mol/);
+  assert.match(a.el('element-detail').innerHTML,/Electrons \(neutral atom\)<\/span><strong>11/);
+  assert.match(a.el('element-detail').innerHTML,/Oxidation states<\/span><strong>\+1/);
+  assert.match(a.el('element-detail').innerHTML,/\+1 = 1 electron lost/);
+  assert.match(a.el('element-detail').innerHTML,/not always charges of individual ions/);
+  a.click('',{element:'26'});assert.match(a.el('element-detail').innerHTML,/\+3, \+2/);
+  a.click('',{element:'8'});assert.match(a.el('element-detail').innerHTML,/15\.999 g\/mol/);
+  assert.match(a.el('element-detail').innerHTML,/−2 = 2 electrons gained/);
+  assert.match(a.el('element-detail').innerHTML,/molecules can contain multiple atoms/);
+  a.click('',{element:'118'});assert.match(a.el('element-detail').innerHTML,/representative isotope; no standard atomic weight/);
+  assert.equal(a.state().answerCount,0);
 });
 test('practice, answer, duplicate submission, Continue and restoration use the same saved state',async()=>{
   const a=await boot();a.click('practice-all');assert.equal(a.el('explore-view').hidden,true);assert.equal(a.el('learn-view').hidden,false);
