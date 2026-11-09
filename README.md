@@ -37,7 +37,7 @@ Use the same browser and **http://127.0.0.1:8767** each time. A different browse
 
 ## Element-family game
 
-The **Polyatomic ions** tab practices the 32 ions in the supplied class table. Four groups of eight use multiple-choice recognition in both directions followed by typed recall of names and formulas. Include the charge when typing formulas, for example `SO4^2-` or `NH4+`. Acetate accepts `C2H3O2-` or `CH3COO-`, and hydrogen carbonate accepts bicarbonate. **Study missed** temporarily reviews previously missed ions and then returns to the saved question. Ion progress is stored independently in this browser. The study list shows the names, formulas, and charges.
+The **Polyatomic ions** tab practices the 32 ions in the supplied class table. Four groups of eight use multiple-choice recognition in both directions followed by typed recall of names and formulas. Include the charge when typing formulas, for example `SO4^2-` or `NH4+`. Acetate accepts `C2H3O2-` or `CH3COO-`, and hydrogen carbonate accepts bicarbonate. **Study missed** temporarily reviews previously missed ions and then returns to the saved question. Ion progress is stored independently in this browser. **Ion chart** shows every name, formula, and charge in one place.
 
 The **Metal or nonmetal** tab opens a separate two-choice game with independently saved totals and Study missed. It uses the same batches of up to 50 elements and three passes. The bundled dataset's metalloids are excluded because they have properties of both metals and nonmetals.
 
