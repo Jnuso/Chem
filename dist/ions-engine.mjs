@@ -9,6 +9,18 @@ const rows=[
 ['Hypoiodite','IO','-','iodine'],['Iodite','IO2','-','iodine'],['Iodate','IO3','-','iodine'],['Periodate','IO4','-','iodine'],
 ['Chromate','CrO4','2-','chromium'],['Dichromate','Cr2O7','2-','chromium'],['Permanganate','MnO4','-','other']];
 export const ions=rows.map(([name,body,charge,family,alternate,alias],id)=>({id,name,body,charge,family,alternate,alias}));
+// Sort only the reference chart; stable IDs and the saved learning groups stay untouched.
+export function chartIons(){
+ const result=[...ions];
+ for(const family of ['nitrogen','sulfur','phosphorus','chlorine','bromine','iodine']){
+  const positions=result.map((ion,index)=>ion.family===family?index:-1).filter(index=>index>=0);
+  const hydrogens=ion=>{const m=ion.body.match(/^H(\d*)/);return m?Number(m[1]||1):0;};
+  const oxygens=ion=>{const m=ion.body.match(/O(\d*)/);return m?Number(m[1]||1):0;};
+  const sorted=positions.map(index=>result[index]).sort((a,b)=>hydrogens(a)-hydrogens(b)||oxygens(b)-oxygens(a)||a.id-b.id);
+  positions.forEach((index,i)=>{result[index]=sorted[i];});
+ }
+ return result;
+}
 export const key='element-learn:polyatomic-ions:v1';
 const clone=x=>JSON.parse(JSON.stringify(x));
 const normName=s=>s.trim().toLowerCase().replace(/\s+ion$/,'').replace(/\s+/g,' ');

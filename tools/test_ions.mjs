@@ -1,11 +1,21 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {ions,IonEngine,gradeName,gradeFormula} from '../dist/ions-engine.mjs';
+import {ions,chartIons,IonEngine,gradeName,gradeFormula} from '../dist/ions-engine.mjs';
 const ion=name=>ions.find(x=>x.name===name);
 test('all 32 ions from the table are represented with distinct names',()=>{
  assert.equal(ions.length,32);assert.equal(new Set(ions.map(x=>x.name)).size,32);
  assert.deepEqual([ion('Hydrogen phosphite').body,ion('Hydrogen phosphite').charge],['HPO3','2-']);
  assert.deepEqual([ion('Periodate').body,ion('Periodate').charge],['IO4','-']);
+});
+test('reference chart orders related oxyanions from more oxygen to less without changing study IDs',()=>{
+ const chart=chartIons(),family=name=>chart.filter(x=>x.family===name).map(x=>x.name);
+ assert.deepEqual(family('nitrogen'),['Nitrate','Nitrite']);
+ assert.deepEqual(family('chlorine'),['Perchlorate','Chlorate','Chlorite','Hypochlorite']);
+ assert.deepEqual(family('bromine'),['Perbromate','Bromate','Bromite','Hypobromite']);
+ assert.deepEqual(family('iodine'),['Periodate','Iodate','Iodite','Hypoiodite']);
+ assert.deepEqual(family('sulfur'),['Sulfate','Sulfite','Hydrogen sulfate','Hydrogen sulfite']);
+ assert.deepEqual(family('phosphorus'),['Phosphate','Hydrogen phosphate','Hydrogen phosphite','Dihydrogen phosphate','Dihydrogen phosphite']);
+ assert.deepEqual(ions.map(x=>x.id),Array.from({length:32},(_,i)=>i));assert.equal(new Set(chart.map(x=>x.id)).size,32);
 });
 test('names and formulas handle aliases and charge without accepting the wrong ion',()=>{
  assert.ok(gradeName(ion('Hydrogen carbonate'),' BICARBONATE ion '));
