@@ -1,4 +1,4 @@
-import {ions,chartIons,key,IonEngine,formulaHTML} from './ions-engine.mjs';
+import {ions,chartIons,key,IonEngine,formulaHTML} from './ions-engine.mjs?v=2';
 const $=id=>document.getElementById(id);let engine,saving=true;
 function save(){try{if(saving)localStorage.setItem(key,JSON.stringify(engine.snapshot()));}catch{saving=false;$('ion-warning').hidden=false;$('ion-warning').textContent='Your browser cannot save ion progress. You can continue this session, but it will be lost on reload.';}$('ion-save').textContent=saving?'Ion progress saved':'Not saving';}
 function render(){const s=engine.s,learning=s.view==='learn';$('ion-learn').hidden=!learning;$('ion-reference').hidden=learning;$('ion-learn-tab').classList.toggle('active',learning);$('ion-reference-tab').classList.toggle('active',!learning);$('ion-learn-tab').setAttribute('aria-pressed',String(learning));$('ion-reference-tab').setAttribute('aria-pressed',String(!learning));
